@@ -1,3 +1,4 @@
+@'
 import requests_mock
 from app_eb_trial import is_private_ip, get_ip_info
 
@@ -50,3 +51,4 @@ def test_get_ip_info_api_error():
         data = get_ip_info("9.9.9.9")
         assert "error" in data
         assert "bad ip" in data["error"].lower()
+'@ | Out-File -Encoding utf8 .\tests\test_api.py
