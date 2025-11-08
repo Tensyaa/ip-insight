@@ -1,7 +1,7 @@
 import re
 import requests
 import requests_mock
-from app_eb_trial import is_private_ip, get_ip_info
+from app_ import is_private_ip, get_ip_info
 
 def test_is_private_ip_patterns():
     assert is_private_ip("10.0.0.1")
